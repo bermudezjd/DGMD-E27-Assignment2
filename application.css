@@ -1,0 +1,646 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+/* This is my main Sass file.  It imports partial files */
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 9, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/normalize */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+/* line 19, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/normalize */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 45, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/normalize */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 57, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/normalize */
+audio, canvas, progress, video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 67, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/normalize */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 78, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/normalize */
+[hidden], template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 89, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/normalize */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 98, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/normalize */
+a:active, a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 109, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/normalize */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 118, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/normalize */
+b, strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 126, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/normalize */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 135, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/normalize */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 144, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/normalize */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 153, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/normalize */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 162, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/normalize */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 169, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/normalize */
+sup {
+  top: -0.5em; }
+
+/* line 173, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/normalize */
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 184, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/normalize */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 192, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/normalize */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 203, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/normalize */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 211, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/normalize */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 221, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/normalize */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 232, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/normalize */
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 256, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/normalize */
+button, input, optgroup, select, textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 266, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/normalize */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 278, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/normalize */
+button, select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 293, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/normalize */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 303, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/normalize */
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 312, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/normalize */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 322, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/normalize */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 335, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/normalize */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 347, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/normalize */
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 357, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/normalize */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 371, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/normalize */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 379, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/normalize */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 390, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/normalize */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 399, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/normalize */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 408, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/normalize */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 419, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/normalize */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 425, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/normalize */
+td, th {
+  padding: 0; }
+
+/* my variables */
+/* orange nav background */
+/* light blue background */
+/* line 1, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 7, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+body {
+  background-color: #d2c5c7;
+  /* light grey */ }
+
+/* line 15, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif; }
+
+/* line 18, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+h3 {
+  font-size: 1em;
+  font-weight: 600; }
+
+/* line 23, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+a {
+  color: #363229; }
+
+/* line 26, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+a:hover {
+  color: #e6e3de; }
+
+/* line 29, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+/* line 34, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+header {
+  background-color: #644D52; }
+
+/* line 37, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+header h1 {
+  margin: 0;
+  color: #f3f0f1;
+  text-transform: uppercase; }
+
+/* line 42, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+header span {
+  color: #f3f0f1;
+  text-transform: none;
+  font-size: 0.5em;
+  font-style: italic;
+  font-weight: normal;
+  padding-top: 0.8em; }
+
+/* line 50, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+nav {
+  background-color: #A49A87; }
+
+/* line 53, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+nav ul {
+  padding-left: 1.25em; }
+
+/* line 57, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+nav ul a {
+  font-family: 'Open Sans', sans-serif;
+  color: #d2c5c7;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 1em;
+  float: left; }
+
+/* line 65, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+nav ul a:hover {
+  color: #2a2123; }
+
+/* line 70, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+blockquote {
+  margin: 0.5em; }
+
+/* line 74, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+section:first-of-type h2 {
+  margin-bottom: 0;
+  padding-bottom: 1.25em;
+  border-bottom: 1px solid; }
+
+/* line 80, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+section + section, article + aside {
+  background-color: #2a2123;
+  padding-left: 1.25em;
+  color: #f3f0f1; }
+
+/* line 90, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+main img {
+  display: block;
+  width: 100%; }
+
+/* line 95, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+article img {
+  max-width: 100%; }
+
+/* line 99, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+main h2 {
+  background-color: #FF974F;
+  color: #fff;
+  padding: 0.5em;
+  font-size: 1.8em; }
+
+/* line 106, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+aside li {
+  margin: 0;
+  border-top: 1px dotted #e6e3de;
+  padding: 1em 0.75em;
+  font-family: Georgia, Times, serif;
+  font-style: italic; }
+
+/* line 116, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+aside li:first-of-type {
+  border: none; }
+
+/* line 120, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1em 2em;
+  background-color: #d2c5c7; }
+
+/* line 128, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+footer {
+  text-align: center; }
+
+/* grid system */
+/* line 134, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+.row:after {
+  /* Or @extend clearfix */
+  content: "";
+  display: table;
+  clear: both; }
+
+/* line 142, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+[class*='col-'] {
+  float: left;
+  position: relative;
+  padding-right: 1.25em; }
+  /* line 146, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+  .row [class*='col-']:last-of-type {
+    padding-right: 0; }
+
+/* Opt-in outside padding */
+/* line 151, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+.row-pad {
+  padding: 1.25em 0 1.25em 1.25em; }
+  /* line 153, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+  .row-pad [class*='col-']:last-of-type {
+    padding-right: 1.25em; }
+
+/* line 158, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+.col-3-3 {
+  width: 99.999999%; }
+
+/* line 161, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+.col-2-3 {
+  width: 66.666666%; }
+
+/* line 164, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+.col-1-3 {
+  width: 33.333333%; }
+
+/* line 167, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+.col-1-2 {
+  width: 50%; }
+
+/* line 170, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+.col-push-2 {
+  left: 66.666666%; }
+
+/* Media queries */
+@media only screen and (min-width: 828px) and (max-width: 979px) {
+  /* line 176, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+  main h2 {
+    font-size: 1.4em; }
+ }
+
+@media only screen and (max-width: 827px) {
+  /* line 181, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+  main h2 {
+    font-size: 1.3em; }
+ }
+
+@media only screen and (min-width: 728px) {
+  /* line 187, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+  .row [class*="col-"].col-push-2 {
+    position: absolute;
+    padding-right: 1.25em;
+    top: 0; }
+ }
+
+@media only screen and (max-width: 727px) {
+  /* line 194, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+  .col-push-2 {
+    left: 0; }
+
+  /* line 197, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+  main h2 {
+    margin-top: 0; }
+ }
+
+@media only screen and (max-width: 579px) {
+  /* line 202, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+  nav ul a {
+    display: block;
+    float: none; }
+
+  /* line 206, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+  nav li {
+    width: 33.333333%;
+    float: left; }
+
+  /* line 210, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+  header span {
+    display: block; }
+
+  /* line 213, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+  footer {
+    padding-top: 1.25em; }
+
+  /* line 216, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+  [class*='col-'] {
+    margin: 0;
+    padding: 0;
+    width: 100%; }
+
+  /* line 221, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+  .row-pad {
+    padding: 0 1.25em 1.25em; }
+    /* line 223, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+    .row-pad [class*='col-']:last-of-type {
+      padding: 0; }
+
+  /* line 227, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+  .wrapper {
+    padding: 0.4em 0; }
+
+  /* line 231, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+  section + section h2, article + aside h2 {
+    padding-left: 0.75em; }
+ }
+
+/* end 479 */
+@media only screen and (min-width: 580px) and (max-width: 727px) {
+  /* line 238, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+  .col-2-3 {
+    width: 99.999999%; }
+
+  /* line 241, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+  .col-1-3 {
+    width: 99.999999%; }
+ }
+
+/* end 480-767 */
+/* Media queries */
+@media only screen and (min-width: 480px) and (max-width: 684px) {
+  /* line 3, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site_media */
+  .col-2-3 {
+    width: 99.999999%; }
+
+  /* line 6, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site_media */
+  .col-1-3 {
+    width: 99.999999%; }
+
+  /* line 9, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site_media */
+  .col-push-2 {
+    left: 0; }
+
+  /* line 12, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site_media */
+  #featured {
+    position: relative; }
+ }
+
+/* end 480-767 */

@@ -1,0 +1,245 @@
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body { 
+  background-color: $color-primary-light; /* light grey */
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-secondary;
+}
+h3 {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+a {
+  color: $color-secondary-dark;
+}
+a:hover {
+  color: $color-secondary-light;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: $color-primary;
+}
+header h1 {
+  margin: 0;
+  color: $color-primary-text;
+  text-transform: uppercase;
+}
+header span {
+  color: $color-primary-text;
+  text-transform: none;
+  font-size: 0.5em;
+  font-style: italic;
+  font-weight: normal;
+  padding-top: 0.8em;
+}
+nav {
+  background-color: $color-secondary;
+}
+nav ul {
+  padding-left: $pad;
+}
+
+nav ul a {
+  font-family: $font-secondary;
+  color: $color-primary-light;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 1em;
+  float: left;
+}
+nav ul a:hover {
+  color: $color-primary-dark;
+}
+
+
+blockquote {
+  margin: 0.5em;
+}
+
+section:first-of-type h2 {
+  margin-bottom: 0;
+  padding-bottom: $pad;
+  border-bottom: 1px solid;
+}
+
+section + section, article + aside {
+//  background: linear-gradient(to bottom, $color-primary-dark, $color-primary, $color-primary-light);
+  background-color: $color-primary-dark;
+  padding-left: $pad;
+  color: $color-primary-text;
+}
+
+// section + section h2 {
+//   color: $color-primary-text;
+// }
+main img {
+  display: block;
+  width: 100%;
+}
+
+article img {
+  max-width: 100%;
+}
+
+main h2 {
+  background-color: $color-highlight;
+  color: $color-highlight-text;
+  padding: 0.5em;
+  font-size: 1.8em;
+}
+
+aside li {
+  margin: 0;
+  border-top: 1px dotted $color-secondary-light;
+  //border-radius: 25px;
+  //background-color: $color-secondary-light;
+  padding: 1em 0.75em;
+  font-family: $font-serif;
+  font-style: italic;
+ // color: $color-primary-text;
+}
+aside li:first-of-type {
+  border:none;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1em 2em;
+  background-color: $color-primary-light;
+}
+
+footer {
+  text-align: center;
+}
+
+/* grid system */
+.row {
+  &:after {
+    /* Or @extend clearfix */
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+[class*='col-'] {
+  float: left;
+  position: relative;
+  padding-right: $pad;
+  .row &:last-of-type {
+    padding-right: 0;
+  }
+}
+/* Opt-in outside padding */
+.row-pad {
+  padding: $pad 0 $pad $pad;
+  [class*='col-']:last-of-type {
+    padding-right: $pad;
+  }
+}
+
+.col-3-3 {
+  width: $col-width * 3;
+}
+.col-2-3 {
+  width: $col-width * 2;
+}
+.col-1-3 {
+  width: $col-width;
+}
+.col-1-2 {
+  width: 50%;
+}
+.col-push-2 {
+  left: $col-width * 2;
+}
+
+/* Media queries */
+@media only screen and (min-width: 828px) and (max-width: 979px) {
+  main h2 {
+    font-size: 1.4em;
+  }
+}
+@media only screen and (max-width: 827px) {
+  main h2 {
+    font-size: 1.3em;
+  }
+}
+
+@media only screen and (min-width: 728px) {
+  .row [class*="col-"].col-push-2 {
+    position: absolute;
+    padding-right: $pad;
+    top: 0;
+  }
+}
+@media only screen and (max-width: 727px) {
+  .col-push-2 {
+    left: 0;
+  }
+  main h2 {
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 579px) {
+  nav ul a {
+    display: block;
+    float: none;
+  }
+  nav li {
+    width: $col-width;
+    float: left;
+  }
+  header span {
+    display: block;
+  }
+  footer {
+    padding-top: $pad;
+  }
+  [class*='col-'] {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .row-pad {
+    padding: 0 $pad $pad;
+    [class*='col-']:last-of-type {
+      padding: 0;
+    }
+  }
+  .wrapper {
+    padding: 0.4em 0;
+  }
+  section + section h2,
+  article + aside h2 {
+    padding-left: 0.75em;
+  }
+} /* end 479 */
+
+
+@media only screen and (min-width: 580px) and (max-width: 727px) {
+  .col-2-3 {
+    width: $col-width * 3;
+  }
+  .col-1-3 {
+    width: $col-width * 3;
+  }
+} /* end 480-767 */
+

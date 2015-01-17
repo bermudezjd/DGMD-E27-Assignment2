@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/* General styles */
 body { 
   background-color: $color-primary-light; /* light grey */
 }
@@ -22,50 +23,64 @@ h3 {
 
 a {
   color: $color-secondary-dark;
+  &:hover {
+    color: $color-secondary-light;
+  }
 }
-a:hover {
-  color: $color-secondary-light;
+
+img {
+  max-width: 100%;
 }
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
+
+/* Section specific styles */
+
 header {
   background-color: $color-primary;
+  h1 {
+    margin: 0;
+    color: $color-primary-text;
+    text-transform: uppercase;
+  }
+  span {
+    color: $color-primary-text;
+    text-transform: none;
+    font-size: 0.5em;
+    font-style: italic;
+    font-weight: normal;
+    padding-top: 0.8em;    
+  }
 }
-header h1 {
-  margin: 0;
-  color: $color-primary-text;
-  text-transform: uppercase;
-}
-header span {
-  color: $color-primary-text;
-  text-transform: none;
-  font-size: 0.5em;
-  font-style: italic;
-  font-weight: normal;
-  padding-top: 0.8em;
-}
+
 nav {
   background-color: $color-secondary;
-}
-nav ul {
-  padding-left: $pad;
+  ul {
+    padding-left: $pad;
+    a {
+      font-family: $font-secondary;
+      color: $color-primary-light;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 1em;
+      float: left;
+      &:hover {
+        color: $color-primary-dark;
+      }
+    }
+  }
 }
 
-nav ul a {
-  font-family: $font-secondary;
-  color: $color-primary-light;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 1em;
-  float: left;
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1em 2em;
+  background-color: $color-primary-light;
 }
-nav ul a:hover {
-  color: $color-primary-dark;
-}
-
 
 blockquote {
   margin: 0.5em;
@@ -77,23 +92,16 @@ section:first-of-type h2 {
   border-bottom: 1px solid;
 }
 
-section + section, article + aside {
-//  background: linear-gradient(to bottom, $color-primary-dark, $color-primary, $color-primary-light);
+section + section, 
+article + aside {
   background-color: $color-primary-dark;
   padding-left: $pad;
   color: $color-primary-text;
 }
 
-// section + section h2 {
-//   color: $color-primary-text;
-// }
 main img {
   display: block;
   width: 100%;
-}
-
-article img {
-  max-width: 100%;
 }
 
 main h2 {
@@ -106,23 +114,12 @@ main h2 {
 aside li {
   margin: 0;
   border-top: 1px dotted $color-secondary-light;
-  //border-radius: 25px;
-  //background-color: $color-secondary-light;
   padding: 1em 0.75em;
   font-family: $font-serif;
   font-style: italic;
- // color: $color-primary-text;
-}
-aside li:first-of-type {
-  border:none;
-}
-
-.wrapper {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1em 2em;
-  background-color: $color-primary-light;
+  &:first-of-type {
+    border: none;
+  }
 }
 
 footer {

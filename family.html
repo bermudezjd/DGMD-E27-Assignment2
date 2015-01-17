@@ -5,26 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>DGMD-E27-Assignment2-Jaime-Bermudez</title>
     <link rel="stylesheet" href="application.css">
-    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="js/grids.min.js"></script>
     <script>
         // Picture element HTML5 shiv
         document.createElement( "picture" );
-        jQuery(function($) {
-            $('.col-1-2').responsiveEqualHeightGrid();  
-        });
     </script>
     <script src="js/picturefill.min.js" async></script>
 </head>
 <body>
     <div class="wrapper">
         <header class="row row-pad">
-            <h1 class="col-3-3">
-                Herman
-            <span>The world's cutest SharPei-Beagle mix</span>
-            </h1>
+            <h1 class="col-3-3">Herman<span>The world's cutest SharPei-Beagle mix</span></h1>
         </header>
-
         <div class="row">
             <nav class="col-3-3">
                 <ul>
@@ -37,20 +28,43 @@
             </nav>
         </div>
         <div class="row row-pad">
-           <article class="col-2-3">
-                <h2>Herman and Family</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis et omnis, temporibus neque, inventore a quidem ipsa? Illo aliquam dolor animi itaque, aut saepe recusandae earum rem, illum, harum, eaque!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere perferendis incidunt inventore excepturi ducimus, unde, quam veniam fugit illum, beatae quisquam. Corporis quia consequuntur alias nemo sapiente deserunt. Consequuntur, libero!</p>
-            </article>
+           <section class="col-2-3">
+               <article class="col-3-3">
+                    <h2>Herman is Family</h2>
+                    <a href="#">
+                        <picture>
+                            <source srcset="img/HermanFamily-800.jpg" media="(min-width: 551px)">
+                            <img srcset="img/HermanFamily-550.jpg" alt="Herman With Family Picture">
+                        </picture>
+                    </a>
+                    <p>Over the years, Herman has become an integral part of our family.  We've been Herman's parents for nearly four years now, and we've watched him grow into a pleasant, fun loving dog.  He loves people, but gets along with other dogs as well.  He's our first "child" in a sense, as raising him has taught us how to care for another being.  We have no doubt that he will be a terrific "big brother" to our newly arriving daughter.</p>
+                </article>
+                <article>
+                    <h2>Herman's First Night</h2>
+                    <a href="#">
+                        <picture>
+                            <source srcset="img/HermanFirstDay-800.jpg" media="(min-width: 551px)">                        
+                            <img srcset="img/HermanFirstDay-550.jpg" alt="Herman's First Day at Home">
+                        </picture>
+                    </a>
+                    <p>We adopted Herman from a rescue organization in New Hampshire called Peis and Strays.  We were so nervous the first night we got him that we could barely sleep.  We thought he was going to cry to be let out of his crate and any noise we heard sent us into a panic.  It turns out the only noise he made was from snoring!</p>
+                </article>
+            </section>
             <aside class="col-1-3">
-                <h2>Through the Years</h2>
+                <h2>More Cuteness</h2>
                 <ul>
-                    <li>Herman was almost never born.  His mother was about to be put down at a kill shelter in Alabama, but the handlers decided that she was gentle and kind enough to warrant calls to rescue organizations.  Luckily, Peis and Strays of Nashua, NH rescued her and her litter!</li>
-                    <li>Herman is one of the most popular dogs at the park he goes to in Weston.  All of the regular walkers know him by name.</li>
-                    <li>Herman absolutely loves oranges!  He won't
-                    leave your side if you're eating one.</li>
-                    <li>One of Herman's favorite activities is to steal socks from the hamper or floor and come and show us while the sock hangs from his mouth.  He gets a kick out of having someone chase him around to get it back.</li>
-                    <li>Cat Rock and 40 Acres park in Weston is Herman's daily adventure spot.  You'll often find him romping around in the fields, or hear his distinct bark from afar.</li>
+                    <li>
+                        <img src="img/HermanPatriotic-640.jpg" alt="Herman in Ogunquit with Patriotic Bandana">
+                        <p>Herman is looking very Patriotic here in Ogunquit, Maine.  My wife Shelley actually made the matching collar and leash in the picture.</p>
+                    </li>
+                    <li>
+                        <img src="img/HermanBath-640.jpg" alt="Herman Getting a Bath">
+                        <p>We have to bribe Herman with treats to get him in the bath.  You can probably tell by the picture that he doesn't enjoy being in the tub.</p>
+                    </li>
+                    <li>
+                        <img src="img/HermanCrushing-640.jpg" alt="Herman Lying on top of me">
+                        <p>Herman likes to lie on top of me while I do computer work on the couch.  It can definitely be distracting at times!</p>
+                    </li>
                 </ul>
             </aside>
         </div>

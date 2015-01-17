@@ -1,8 +1,8 @@
-/* my variables */
+/* Fonts */
 $font-primary: Arial, Geneva, sans-serif;
 $font-secondary: 'Open Sans', sans-serif;
 $font-serif: Georgia, Times, serif;
-
+/* Colors */
 $color-primary: #644D52 ; /* orange nav background */
 $color-primary-dark: darken($color-primary, 20%);
 $color-primary-light: lighten($color-primary, 45%);
@@ -14,5 +14,10 @@ $color-secondary-text: $color-secondary-light;
 $color-highlight: #FF974F;
 $color-highlight-text: #fff;
 
+/* Grid system padding and columns */
 $pad: 1.25em;
+$pad-less: 0.8em;
+$pad-least: 0.4em;
 $col-width: 33.333333%;
+$col-width-2: $col-width * 2;
+$col-width-3: $col-width * 3;

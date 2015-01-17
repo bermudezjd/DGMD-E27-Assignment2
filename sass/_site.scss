@@ -8,6 +8,7 @@
 body { 
   background-color: $color-primary-light; /* light grey */
 }
+
 h1,
 h2,
 h3,
@@ -16,6 +17,7 @@ h5,
 h6 {
   font-family: $font-secondary;
 }
+/* Main page article headings */
 h3 {
   font-size: 1em;
   font-weight: 600;
@@ -28,17 +30,25 @@ a {
   }
 }
 
+p {
+  line-height: 1.4;
+}
+
 img {
   max-width: 100%;
 }
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-/* Section specific styles */
+article {
+  margin-bottom: 1em;
+}
 
+/* Section specific styles */
 header {
   background-color: $color-primary;
   h1 {
@@ -52,7 +62,7 @@ header {
     font-size: 0.5em;
     font-style: italic;
     font-weight: normal;
-    padding-top: 0.8em;    
+    padding: $pad-less 0 0 $pad-less;    
   }
 }
 
@@ -65,7 +75,7 @@ nav {
       color: $color-primary-light;
       text-decoration: none;
       font-weight: bold;
-      padding: 1em;
+      padding: $pad;
       float: left;
       &:hover {
         color: $color-primary-dark;
@@ -82,23 +92,7 @@ nav {
   background-color: $color-primary-light;
 }
 
-blockquote {
-  margin: 0.5em;
-}
-
-section:first-of-type h2 {
-  margin-bottom: 0;
-  padding-bottom: $pad;
-  border-bottom: 1px solid;
-}
-
-section + section, 
-article + aside {
-  background-color: $color-primary-dark;
-  padding-left: $pad;
-  color: $color-primary-text;
-}
-
+/* Feature image and article area */
 main img {
   display: block;
   width: 100%;
@@ -107,18 +101,47 @@ main img {
 main h2 {
   background-color: $color-highlight;
   color: $color-highlight-text;
-  padding: 0.5em;
+  padding: $pad-least;
   font-size: 1.8em;
 }
 
-aside li {
-  margin: 0;
-  border-top: 1px dotted $color-secondary-light;
-  padding: 1em 0.75em;
-  font-family: $font-serif;
+blockquote {
+  font-family: $font-secondary;
   font-style: italic;
-  &:first-of-type {
-    border: none;
+  margin: 0.5em;
+  p {
+    font-size: 1.2em;
+  }
+  cite {
+    font-family: $font-primary;
+    font-style: normal;
+    font-size: 0.75em;
+    &::before {
+      content: "\2014 ";
+    }
+  }
+}
+
+/* Spotlight main page */
+section > h2 {
+  margin-bottom: 0;
+  padding-bottom: $pad;
+  border-bottom: 1px solid;
+}
+
+aside {
+  background-color: $color-primary-dark;
+  padding-left: $pad;
+  color: $color-primary-text;
+  li {
+    margin: 0;
+    border-top: 1px dotted $color-secondary-light;
+    padding: 1em $pad-less;
+    font-family: $font-serif;
+    font-style: italic;
+    &:first-of-type {
+      border: none;
+    }
   }
 }
 
@@ -128,12 +151,7 @@ footer {
 
 /* grid system */
 .row {
-  &:after {
-    /* Or @extend clearfix */
-    content: "";
-    display: table;
-    clear: both;
-  }
+  @include clearfix;
 }
 
 [class*='col-'] {
@@ -176,20 +194,21 @@ footer {
 }
 @media only screen and (max-width: 827px) {
   main h2 {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
 }
 
-@media only screen and (min-width: 728px) {
+@media only screen and (min-width: 776px) {
   .row [class*="col-"].col-push-2 {
     position: absolute;
     padding-right: $pad;
     top: 0;
   }
 }
-@media only screen and (max-width: 727px) {
+@media only screen and (max-width: 775px) {
   .col-push-2 {
     left: 0;
+    margin:0;
   }
   main h2 {
     margin-top: 0;
@@ -206,12 +225,12 @@ footer {
   }
   header span {
     display: block;
+    padding-left: 0;
   }
   footer {
     padding-top: $pad;
   }
   [class*='col-'] {
-    margin: 0;
     padding: 0;
     width: 100%;
   }
@@ -221,22 +240,30 @@ footer {
       padding: 0;
     }
   }
+  header.row-pad {
+    padding-top: $pad;
+  }
   .wrapper {
-    padding: 0.4em 0;
+    padding: $pad-least 0;
   }
-  section + section h2,
-  article + aside h2 {
-    padding-left: 0.75em;
+  aside h2 {
+    padding-left: $pad-less;
   }
-} /* end 479 */
+  section > h2 {
+    padding-bottom: $pad-less;
+  }
+  article {
+    margin-bottom: $pad-less;
+  }
+} /* end 579 */
 
 
-@media only screen and (min-width: 580px) and (max-width: 727px) {
-  .col-2-3 {
-    width: $col-width * 3;
-  }
+@media only screen and (min-width: 580px) and (max-width: 775px) {
+  .col-2-3,
   .col-1-3 {
-    width: $col-width * 3;
+    width: $col-width-3;
   }
-} /* end 480-767 */
-
+  .row-pad {
+    padding: $pad-less 0 $pad $pad-less;
+  }
+} /* end 580-775 */

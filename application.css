@@ -362,9 +362,12 @@ table {
 td, th {
   padding: 0; }
 
-/* my variables */
+/* Fonts */
+/* Colors */
 /* orange nav background */
 /* light blue background */
+/* Grid system padding and columns */
+/* Site mixins */
 /* line 1, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
@@ -377,69 +380,78 @@ body {
   background-color: #d2c5c7;
   /* light grey */ }
 
-/* line 16, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+/* line 17, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Open Sans', sans-serif; }
 
-/* line 19, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+/* Main page article headings */
+/* line 21, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
 h3 {
   font-size: 1em;
   font-weight: 600; }
 
-/* line 24, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+/* line 26, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
 a {
   color: #363229; }
-  /* line 26, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+  /* line 28, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
   a:hover {
     color: #e6e3de; }
 
-/* line 31, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+/* line 33, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+p {
+  line-height: 1.4; }
+
+/* line 37, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
 img {
   max-width: 100%; }
 
-/* line 34, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+/* line 41, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0; }
 
+/* line 47, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+article {
+  margin-bottom: 1em; }
+
 /* Section specific styles */
-/* line 42, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+/* line 52, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
 header {
   background-color: #644D52; }
-  /* line 44, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+  /* line 54, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
   header h1 {
     margin: 0;
     color: #f3f0f1;
     text-transform: uppercase; }
-  /* line 49, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+  /* line 59, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
   header span {
     color: #f3f0f1;
     text-transform: none;
     font-size: 0.5em;
     font-style: italic;
     font-weight: normal;
-    padding-top: 0.8em; }
+    padding: 0.8em 0 0 0.8em; }
 
-/* line 59, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+/* line 69, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
 nav {
   background-color: #A49A87; }
-  /* line 61, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+  /* line 71, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
   nav ul {
     padding-left: 1.25em; }
-    /* line 63, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+    /* line 73, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
     nav ul a {
       font-family: 'Open Sans', sans-serif;
       color: #d2c5c7;
       text-decoration: none;
       font-weight: bold;
-      padding: 1em;
+      padding: 1.25em;
       float: left; }
-      /* line 70, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+      /* line 80, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
       nav ul a:hover {
         color: #2a2123; }
 
-/* line 77, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+/* line 87, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
 .wrapper {
   width: 100%;
   max-width: 1200px;
@@ -447,195 +459,201 @@ nav {
   padding: 1em 2em;
   background-color: #d2c5c7; }
 
-/* line 85, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
-blockquote {
-  margin: 0.5em; }
-
-/* line 89, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
-section:first-of-type h2 {
-  margin-bottom: 0;
-  padding-bottom: 1.25em;
-  border-bottom: 1px solid; }
-
+/* Feature image and article area */
 /* line 96, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
-section + section, article + aside {
-  background-color: #2a2123;
-  padding-left: 1.25em;
-  color: #f3f0f1; }
-
-/* line 102, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
 main img {
   display: block;
   width: 100%; }
 
-/* line 107, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+/* line 101, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
 main h2 {
   background-color: #FF974F;
   color: #fff;
-  padding: 0.5em;
+  padding: 0.4em;
   font-size: 1.8em; }
 
-/* line 114, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
-aside li {
-  margin: 0;
-  border-top: 1px dotted #e6e3de;
-  padding: 1em 0.75em;
-  font-family: Georgia, Times, serif;
-  font-style: italic; }
-  /* line 120, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
-  aside li:first-of-type {
-    border: none; }
+/* line 108, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+blockquote {
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  margin: 0.5em; }
+  /* line 112, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+  blockquote p {
+    font-size: 1.2em; }
+  /* line 115, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+  blockquote cite {
+    font-family: Arial, Geneva, sans-serif;
+    font-style: normal;
+    font-size: 0.75em; }
+    /* line 119, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+    blockquote cite::before {
+      content: "\2014 "; }
 
-/* line 125, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+/* Spotlight main page */
+/* line 126, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+section > h2 {
+  margin-bottom: 0;
+  padding-bottom: 1.25em;
+  border-bottom: 1px solid; }
+
+/* line 132, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+aside {
+  background-color: #2a2123;
+  padding-left: 1.25em;
+  color: #f3f0f1; }
+  /* line 136, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+  aside li {
+    margin: 0;
+    border-top: 1px dotted #e6e3de;
+    padding: 1em 0.8em;
+    font-family: Georgia, Times, serif;
+    font-style: italic; }
+    /* line 142, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+    aside li:first-of-type {
+      border: none; }
+
+/* line 148, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
 footer {
   text-align: center; }
 
 /* grid system */
-/* line 131, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
-.row:after {
-  /* Or @extend clearfix */
+/* line 3, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/mixins */
+.row::after {
   content: "";
   display: table;
   clear: both; }
 
-/* line 139, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+/* line 157, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
 [class*='col-'] {
   float: left;
   position: relative;
   padding-right: 1.25em; }
-  /* line 143, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+  /* line 161, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
   .row [class*='col-']:last-of-type {
     padding-right: 0; }
 
 /* Opt-in outside padding */
-/* line 148, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+/* line 166, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
 .row-pad {
   padding: 1.25em 0 1.25em 1.25em; }
-  /* line 150, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+  /* line 168, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
   .row-pad [class*='col-']:last-of-type {
     padding-right: 1.25em; }
 
-/* line 155, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+/* line 173, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
 .col-3-3 {
   width: 99.999999%; }
 
-/* line 158, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+/* line 176, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
 .col-2-3 {
   width: 66.666666%; }
 
-/* line 161, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+/* line 179, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
 .col-1-3 {
   width: 33.333333%; }
 
-/* line 164, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+/* line 182, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
 .col-1-2 {
   width: 50%; }
 
-/* line 167, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+/* line 185, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
 .col-push-2 {
   left: 66.666666%; }
 
 /* Media queries */
 @media only screen and (min-width: 828px) and (max-width: 979px) {
-  /* line 173, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+  /* line 191, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
   main h2 {
     font-size: 1.4em; }
  }
 
 @media only screen and (max-width: 827px) {
-  /* line 178, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+  /* line 196, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
   main h2 {
-    font-size: 1.3em; }
+    font-size: 1.2em; }
  }
 
-@media only screen and (min-width: 728px) {
-  /* line 184, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+@media only screen and (min-width: 776px) {
+  /* line 202, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
   .row [class*="col-"].col-push-2 {
     position: absolute;
     padding-right: 1.25em;
     top: 0; }
  }
 
-@media only screen and (max-width: 727px) {
-  /* line 191, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+@media only screen and (max-width: 775px) {
+  /* line 209, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
   .col-push-2 {
-    left: 0; }
+    left: 0;
+    margin: 0; }
 
-  /* line 194, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+  /* line 213, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
   main h2 {
     margin-top: 0; }
  }
 
 @media only screen and (max-width: 579px) {
-  /* line 199, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+  /* line 218, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
   nav ul a {
     display: block;
     float: none; }
 
-  /* line 203, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+  /* line 222, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
   nav li {
     width: 33.333333%;
     float: left; }
 
-  /* line 207, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+  /* line 226, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
   header span {
-    display: block; }
+    display: block;
+    padding-left: 0; }
 
-  /* line 210, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+  /* line 230, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
   footer {
     padding-top: 1.25em; }
 
-  /* line 213, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+  /* line 233, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
   [class*='col-'] {
-    margin: 0;
     padding: 0;
     width: 100%; }
 
-  /* line 218, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+  /* line 237, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
   .row-pad {
     padding: 0 1.25em 1.25em; }
-    /* line 220, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+    /* line 239, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
     .row-pad [class*='col-']:last-of-type {
       padding: 0; }
 
-  /* line 224, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+  /* line 243, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+  header.row-pad {
+    padding-top: 1.25em; }
+
+  /* line 246, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
   .wrapper {
     padding: 0.4em 0; }
 
-  /* line 228, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
-  section + section h2, article + aside h2 {
-    padding-left: 0.75em; }
+  /* line 249, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+  aside h2 {
+    padding-left: 0.8em; }
+
+  /* line 252, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+  section > h2 {
+    padding-bottom: 0.8em; }
+
+  /* line 255, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+  article {
+    margin-bottom: 0.8em; }
  }
 
-/* end 479 */
-@media only screen and (min-width: 580px) and (max-width: 727px) {
-  /* line 235, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
-  .col-2-3 {
+/* end 579 */
+@media only screen and (min-width: 580px) and (max-width: 775px) {
+  /* line 263, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+  .col-2-3, .col-1-3 {
     width: 99.999999%; }
 
-  /* line 238, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
-  .col-1-3 {
-    width: 99.999999%; }
+  /* line 266, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site */
+  .row-pad {
+    padding: 0.8em 0 1.25em 0.8em; }
  }
 
-/* end 480-767 */
-/* Media queries */
-@media only screen and (min-width: 480px) and (max-width: 684px) {
-  /* line 3, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site_media */
-  .col-2-3 {
-    width: 99.999999%; }
-
-  /* line 6, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site_media */
-  .col-1-3 {
-    width: 99.999999%; }
-
-  /* line 9, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site_media */
-  .col-push-2 {
-    left: 0; }
-
-  /* line 12, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-Assignment2/sass/site_media */
-  #featured {
-    position: relative; }
- }
-
-/* end 480-767 */
+/* end 580-775 */
